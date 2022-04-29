@@ -21,3 +21,6 @@ sr.reveal(".home-img", { delay: 200 });
 sr.reveal(".about-text", {});
 sr.reveal(".heading", {});
 sr.reveal(".about-img", { delay: 200 });
+
+sr.reveal(".footer-widget", {});
+sr.reveal(".copyright-wrapper", {});
