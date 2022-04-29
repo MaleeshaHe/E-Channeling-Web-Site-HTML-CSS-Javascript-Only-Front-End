@@ -501,7 +501,6 @@ footer {
 @media (max-width: 450px) {
 
     .navbar{
-        align-items: center;
         position: absolute;
         top:110%; right: 2rem;
         border-radius: .5rem;
