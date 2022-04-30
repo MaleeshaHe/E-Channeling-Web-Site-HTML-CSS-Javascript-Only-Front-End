@@ -178,12 +178,14 @@ form .buttons button , .backBtn{
     .Fcontainer form::-webkit-scrollbar{
        display: none;
     }
+    form .fields.input-field select,
     form .fields .input-field{
         width: calc(100% / 2 - 15px);
     }
 }
 
 @media (max-width: 550px) {
+    form .fields.input-field select,
     form .fields .input-field{
         width: 100%;
     }
