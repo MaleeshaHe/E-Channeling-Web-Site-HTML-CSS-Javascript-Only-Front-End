@@ -95,50 +95,49 @@
           </div>
 
           <div class="details ID">
-            <span class="title">Identity Details</span>
+            <span class="title">Address Details</span>
 
             <div class="fields">
               <div class="input-field">
-                <label>ID Type</label>
-                <input type="text" placeholder="Enter your ID type" />
-              </div>
-
-              <div class="input-field">
-                <label>ID Number</label>
+                <label>Street Address</label>
                 <input
                   type="text"
-                  placeholder="Enter your ID number"
+                  placeholder="Enter your street address "
                   required
                 />
               </div>
 
               <div class="input-field">
-                <label>Issued Authority</label>
-                <input type="text" placeholder="ID Issued date " />
-              </div>
-
-              <div class="input-field">
-                <label>Issued State</label>
+                <label>Street Address Line 2</label>
                 <input
                   type="text"
-                  placeholder="Enter mobile number "
-                  required
+                  placeholder="Enter your street address line 2"
                 />
               </div>
 
               <div class="input-field">
-                <label>Issued Date</label>
-                <input type="date" placeholder="Enter your gender" />
+                <label>State / Province</label>
+                <input type="text" placeholder="Enter your state / province " />
               </div>
 
               <div class="input-field">
-                <label>Expiry Date</label>
+                <label>District</label>
                 <input
-                  type="date"
-                  placeholder="Enter myour occupation "
+                  type="text"
+                  placeholder="Enter your district "
                   required
                 />
               </div>
+
+              <div class="input-field">
+                <label>Postal / Zip Code</label>
+                <input
+                  type="number"
+                  placeholder="Enter your postal / zip code"
+                />
+              </div>
+
+              <div class="input-field"></div>
             </div>
 
             <button class="nextBtn">
@@ -150,97 +149,62 @@
 
         <div class="form second">
           <div class="details_address">
-            <span class="title">Address Details</span>
+            <span class="title">Appointment Details</span>
 
             <div class="fields">
               <div class="input-field">
-                <label>Address Type</label>
-                <input type="text" placeholder="Enter your name " />
+                <label>Preferred Doctor</label>
+                <input type="text" placeholder="Enter your preferred doctor" />
               </div>
 
               <div class="input-field">
-                <label>Nationality</label>
+                <label>Preferred Hospital</label>
                 <input
                   type="text"
-                  placeholder="Enter your birth of date"
-                  required
+                  placeholder="Enter your preferred hospital"
                 />
               </div>
 
               <div class="input-field">
-                <label>State</label>
-                <input type="text" placeholder="Enter your email " />
+                <label>Appointment date</label>
+                <input type="date" placeholder="Appointment date" />
               </div>
 
               <div class="input-field">
-                <label>District</label>
-                <input
-                  type="text"
-                  placeholder="Enter mobile number "
+                <label>Purpose of appointment</label>
+                <textarea
+                  name="Purpose of appointment"
+                  rows="30"
+                  cols="30"
+                  placeholder="Purpose of appointment"
                   required
-                />
-              </div>
-
-              <div class="input-field">
-                <label>Block Number</label>
-                <input type="number" placeholder="Enter your gender" />
-              </div>
-
-              <div class="input-field">
-                <label>Ward Number</label>
-                <input
-                  type="number"
-                  placeholder="Enter your occupation "
-                  required
-                />
+                >
+                </textarea>
               </div>
             </div>
           </div>
 
           <div class="details family">
-            <span class="title">Family Details</span>
+            <span class="title">Other Details</span>
 
             <div class="fields">
               <div class="input-field">
-                <label>Father Name</label>
-                <input type="text" placeholder="Enter your ID type" />
+                <label>Have you previously attended our facility</label>
+                <select name="dropdown">
+                  <option value="yes" selected>Yes</option>
+                  <option value="no">No</option>
+                </select>
               </div>
 
               <div class="input-field">
-                <label>Mother Name</label>
-                <input
-                  type="text"
-                  placeholder="Enter your ID number"
-                  required
-                />
+                <label>If Yes, state on which condition and when?</label>
+                <input type="text" placeholder="condition and when?" required />
               </div>
 
               <div class="input-field">
-                <label>Grandfather Name</label>
-                <input type="text" placeholder="ID Issued date " />
-              </div>
+                <label>If there is Anything to Mention</label>
 
-              <div class="input-field">
-                <label>Spouse Name</label>
-                <input
-                  type="text"
-                  placeholder="Enter mobile number "
-                  required
-                />
-              </div>
-
-              <div class="input-field">
-                <label>Father in Law</label>
-                <input type="text" placeholder="Enter your gender" />
-              </div>
-
-              <div class="input-field">
-                <label>Mother in Law</label>
-                <input
-                  type="text"
-                  placeholder="Enter your occupation "
-                  required
-                />
+                <input type="text" placeholder="anything to mention" />
               </div>
             </div>
 

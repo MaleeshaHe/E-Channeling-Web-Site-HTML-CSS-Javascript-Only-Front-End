@@ -2,6 +2,7 @@
 
 body{
     background: #f5f5f5;
+    background-image: url("Sprinkle.svg");
 }
 
 /* Colors */
@@ -19,6 +20,7 @@ body{
     margin: 0 auto;
     background-color: #fff;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    
 }
 
 .Fcontainer header{
@@ -101,6 +103,19 @@ form .fields .input-field{
     color: #2e2e2e;
 }
 
+.input-field textarea{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 110px;
+    width: 550px;
+    margin: 8px 0;
+}
+
 .input-field select,
 .input-field input{
     outline: none;
@@ -178,6 +193,7 @@ form .buttons button , .backBtn{
     .Fcontainer form::-webkit-scrollbar{
        display: none;
     }
+    form .fields.input-field textarea,
     form .fields.input-field select,
     form .fields .input-field{
         width: calc(100% / 2 - 15px);
@@ -185,6 +201,7 @@ form .buttons button , .backBtn{
 }
 
 @media (max-width: 550px) {
+    form .fields.input-field textarea,
     form .fields.input-field select,
     form .fields .input-field{
         width: 100%;
