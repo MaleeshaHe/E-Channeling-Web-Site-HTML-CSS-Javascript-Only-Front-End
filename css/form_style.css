@@ -171,9 +171,6 @@ form .buttons button , .backBtn{
 }
 
 @media (max-width: 750px) {
-    .Fcontainer{
-        margin-left: 12px;
-    }
     .Fcontainer form{
         overflow-y: scroll;
     }
