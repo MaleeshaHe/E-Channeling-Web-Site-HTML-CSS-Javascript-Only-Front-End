@@ -40,3 +40,4 @@ sr.reveal(".footer-widget", {});
 sr.reveal(".copyright-wrapper", {});
 
 sr.reveal(".Fcontainer", {});
+sr.reveal(".successful", {});

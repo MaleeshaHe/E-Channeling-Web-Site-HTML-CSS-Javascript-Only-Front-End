@@ -1,6 +1,7 @@
 const form = document.querySelector("form"),
   nextBtn = form.querySelector(".nextBtn"),
   backBtn = form.querySelector(".backBtn"),
+  submit = form.querySelector(".submit"),
   allInput = form.querySelectorAll(".first input");
 
 nextBtn.addEventListener("click", () => {
@@ -14,3 +15,13 @@ nextBtn.addEventListener("click", () => {
 });
 
 backBtn.addEventListener("click", () => form.classList.remove("secActive"));
+
+submit.addEventListener("click", () => {
+  allInput.forEach((input) => {
+    if (input.value != "") {
+      form.classList.add("thirdActive");
+    } else {
+      form.classList.remove("thirdActive");
+    }
+  });
+});
