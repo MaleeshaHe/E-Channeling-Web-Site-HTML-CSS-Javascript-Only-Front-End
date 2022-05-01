@@ -270,6 +270,7 @@ footer {
   .wrapper .footer-widget .logo {
     margin-bottom: 30px;
     vertical-align: middle;
+    width: 50%;
   }
   
   .wrapper .footer-widget p {
@@ -305,6 +306,22 @@ footer {
   
   .wrapper .footer-widget .socials li a:hover {
     background-color: var(--main-color);
+  }
+
+  .wrapper .footer-widget .callButn{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: center;
+    height: 45px;
+    max-width: 164px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: red;
   }
   
   .wrapper .footer-widget h6 {
@@ -547,5 +564,16 @@ footer {
     .about-text{
         max-width: 280px;
     }
+    .wrapper .footer-widget .callButn{
+            height: 60px;
+            padding: 20px;
+          
+      }
+
+      .wrapper .footer-widget .logo {
+        margin-bottom: 30px;
+        vertical-align: middle;
+        width: 100%;
+      }
 
 }
