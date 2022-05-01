@@ -323,6 +323,11 @@ footer {
     padding: 10px;
     background-color: red;
   }
+
+  .wrapper .footer-widget .callButn:hover {
+    background: var(--secind-color);
+    box-shadow: 0 10px 34px rgba(0, 0, 10, 0.14);
+}
   
   .wrapper .footer-widget h6 {
     color: #585978;
