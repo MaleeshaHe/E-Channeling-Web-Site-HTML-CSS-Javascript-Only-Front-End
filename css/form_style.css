@@ -175,7 +175,7 @@ form .fields .input-field{
     color: #333;
 }
 
-.Fcontainer form button, .backBtn{
+.Fcontainer form button,.submitx, .backBtn{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -192,6 +192,7 @@ form .fields .input-field{
     cursor: pointer;
 }
 
+.Fcontainer form .submitx,
 .Fcontainer form button,
 .Fcontainer form .backBtn{
     font-size: 14px;
