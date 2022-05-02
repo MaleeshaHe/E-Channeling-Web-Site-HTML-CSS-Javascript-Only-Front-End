@@ -39,5 +39,5 @@ sr.reveal(".about-img", { delay: 200 });
 sr.reveal(".footer-widget", {});
 sr.reveal(".copyright-wrapper", {});
 
-sr.reveal(".Fcontainer", {});
+sr.reveal(".Fcontainer", { delay: 200 });
 sr.reveal(".successful", {});
