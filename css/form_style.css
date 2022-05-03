@@ -11,6 +11,8 @@ body{
     --secind-color:#212f3d;
 }
 
+
+
 .Fcontainer{
     position: relative;
     max-width: 900px;
@@ -22,6 +24,24 @@ body{
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     
 }
+
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 1;
+    text-align: center;
+}
+
+.loader img{
+    margin-top: 300px;
+    width: 100px;
+}
+
+
 
 .Fcontainer header{
     position: relative;

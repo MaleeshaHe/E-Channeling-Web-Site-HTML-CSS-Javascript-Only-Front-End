@@ -1,3 +1,7 @@
+$(window).on("load", function () {
+  $(".loader").hide();
+});
+
 const form = document.querySelector("form"),
   nextBtn = form.querySelector(".nextBtn"),
   backBtn = form.querySelector(".backBtn"),
