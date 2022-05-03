@@ -7,6 +7,9 @@
     --secind-color:#212f3d;
 }
 
+body{
+    background-image: url('./Sprinkle.svg');
+}
 
 section{
     min-height: 100vh;
@@ -46,12 +49,12 @@ section{
 
 .member{
     flex: 1 1 250px;
-    border: 2px solid #212f3d;
+    border: 1px solid #212f3d;
     border-radius: 20px;
     margin: 40px;
     text-align: center;
     padding: 20px 10px;
-    
+    background-color: white;
     cursor: pointer;
     max-width: 300px;
     transition: all 0.3s;
@@ -74,15 +77,63 @@ section{
 }
 
 .member h2{
-    text-transform: uppercase;
+    text-transform:capitalize;
     font-size: 24px;
     color: #212f3d;
     margin: 15px 0;
 }
 
 .member p{
+    text-transform:lowercase;
     font-size: 15px;
     color: #212f3d;
     line-height: 1.6;
+}
+
+.member .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 40px 10px 40px;
+
+    height: 45px;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.member .button:hover{
+    background-color: #212f3d;
+}
+
+.member .button a{
+    margin-left: 10px;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+@media (max-width:991px) {
+    .team-row{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .team-row{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .member{
+        margin:20px;
+
 }
 
