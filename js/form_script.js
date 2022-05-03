@@ -1,7 +1,9 @@
+// Form Pre loader
 $(window).on("load", function () {
   $(".loader").hide();
 });
 
+// Appointment form page slide javascript
 const form = document.querySelector("form"),
   nextBtn = form.querySelector(".nextBtn"),
   backBtn = form.querySelector(".backBtn"),
