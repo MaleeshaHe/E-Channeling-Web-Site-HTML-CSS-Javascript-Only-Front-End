@@ -79,7 +79,7 @@ section{
     border: none;
     outline: none;
     color: #fff;
-    border-radius: 10px;
+    border-radius: 25px;
     background-color: var(--main-color);
     transition: all 0.3s linear;
     cursor: pointer;
@@ -200,7 +200,7 @@ h5{
     cursor: pointer;
     margin-top: 10px;
     background: #FF725E;
-    border-radius: 12px;
+    border-radius: 25px;
 }
 
 .chatbox button:hover{
