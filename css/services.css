@@ -8,7 +8,7 @@
 }
 
 body{
-    background-image: url('./Sprinkle.svg');
+    
 }
 
 section{
@@ -16,9 +16,11 @@ section{
     justify-content: center;
     align-items: center;
     text-align: center;
+    
 }
 
 .team-row{
+    
     display: flex;
     text-align: center;
     justify-content: center;
