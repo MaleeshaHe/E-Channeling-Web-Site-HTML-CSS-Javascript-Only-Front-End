@@ -27,7 +27,9 @@ sr.reveal(".about-text", {});
 sr.reveal(".heading", {});
 sr.reveal(".about-img", { delay: 200 });
 
-sr.reveal(".title", {});
+sr.reveal(".ambulancex-text", {});
+
+sr.reveal(".ambulancex", { delay: 200 });
 
 const left = ScrollReveal({
   origin: "bottom",
