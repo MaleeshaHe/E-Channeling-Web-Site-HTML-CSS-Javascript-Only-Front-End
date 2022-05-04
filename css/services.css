@@ -1,0 +1,143 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* Colors */
+:root{
+    --main-color:#FF725E;
+    --secind-color:#212f3d;
+}
+
+body{
+    background-image: url('./Sprinkle.svg');
+}
+
+section{
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.team-row{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.services{
+    flex: 1 1 250px;
+    border: 1px solid #212f3d;
+    border-radius: 20px;
+    margin: 40px;
+    text-align: center;
+    padding: 20px 10px;
+    background-color: white;
+    cursor: pointer;
+    max-width: 300px;
+    transition: all 0.3s;
+}
+
+.services:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-20px);
+}
+
+.sicon i{
+    font-size: 50px;
+    color:#212f3d;
+    border: 3px solid #FF725E;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.services h2{
+    text-transform:capitalize;
+    font-size: 24px;
+    color: #212f3d;
+    margin: 15px 0;
+}
+
+.services p{
+    text-transform:lowercase;
+    font-size: 15px;
+    color: #212f3d;
+    line-height: 1.6;
+}
+
+.services .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 40px 10px 40px;
+    height: 45px;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.services .button:hover{
+    background-color: #212f3d;
+}
+
+.services .button a{
+    margin-left: 10px;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/* Ambulance CSS*/
+
+
+.ambulance-text{
+    margin-left: 50px;
+    max-width: 500px;
+}
+
+.ambulance-text p{
+    padding: 8px 8px;
+    color: var(--secind-color);
+    font-weight:400;
+    margin-bottom: 3rem;
+    letter-spacing: 1px;
+}
+
+.ambulance-img{
+    width: 650px;
+    height: 650px;
+   
+}
+
+.ambulance-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+
+
+@media (max-width:991px) {
+    .team-row{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 450px) {
+    .team-row{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .services{
+        margin:20px;
+    }
+}
