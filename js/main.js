@@ -20,6 +20,9 @@ const sr = ScrollReveal({
   reset: true,
 });
 
+sr.reveal(".home-text", {});
+sr.reveal(".home-img", { delay: 200 });
+
 sr.reveal(".about-text", {});
 sr.reveal(".heading", {});
 sr.reveal(".about-img", { delay: 200 });
@@ -38,6 +41,3 @@ left.reveal(".member", { delay: 200 });
 
 left.reveal(".footer-widget", {});
 left.reveal(".copyright-wrapper", {});
-
-left.reveal(".home-text", {});
-left.reveal(".home-img", { delay: 200 });

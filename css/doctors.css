@@ -18,6 +18,7 @@ section{
     text-align: center;
 }
 
+/*
 
 .title{
     text-align: center;
@@ -37,7 +38,7 @@ section{
     left: 50%;
     transform: translateX(-50%);
 }
-
+*/
 .team-row{
     display: flex;
     text-align: center;

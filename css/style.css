@@ -269,6 +269,9 @@ footer {
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
+    
+    padding: 20px 0;
+    border-top: 1px solid rgba(88, 89, 120, 0.4);
   }
   
   .wrapper .footer-widget {
