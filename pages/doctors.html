@@ -53,6 +53,17 @@
 
     <!-- Our Doctors list-->
 
+    <script>
+      function on() {
+        document.getElementById("overlay").style.display = "block";
+        document.getElementById("lay").style.display = "block";
+      }
+
+      function off() {
+        document.getElementById("overlay").style.display = "none";
+        document.getElementById("lay").style.display = "none";
+      }
+    </script>
     <section>
       <!-- Heading -->
       <div class="heading">
@@ -66,7 +77,7 @@
           <img src="../images/doctors/7.png" alt="" />
           <h2>Maleesha Herath</h2>
           <p>PSYCHOLOGICAL COUNSELOR / CERTIFIED PSYCHOLOGICAL THERAPIST</p>
-          <div class="button">
+          <div class="button" onclick="on()">
             <i class="bx bxs-chat"></i>
             <a href="#">Chat Now</a>
           </div>
@@ -75,7 +86,7 @@
           <img src="../images/doctors/1.png" alt="" />
           <h2>Maleesha Herath</h2>
           <p>PSYCHOLOGICAL COUNSELOR/ PSYCHOTHERAPIST</p>
-          <div class="button">
+          <div class="button" onclick="on()">
             <i class="bx bxs-chat"></i>
             <a href="#">Chat Now</a>
           </div>
@@ -84,7 +95,7 @@
           <img src="../images/doctors/6.png" alt="" />
           <h2>Maleesha Herath</h2>
           <p>PSYCHOLOGICAL COUNSELOR/ PSYCHOTHERAPIST</p>
-          <div class="button">
+          <div class="button" onclick="on()">
             <i class="bx bxs-chat"></i>
             <a href="#">Chat Now</a>
           </div>
@@ -93,7 +104,7 @@
           <img src="../images/doctors/4.png" alt="" />
           <h2>Maleesha Herath</h2>
           <p>PSYCHOLOGIST/LICENSED COUNSELOR AND PSYCHOTHERAPIST</p>
-          <div class="button">
+          <div class="button" onclick="on()">
             <i class="bx bxs-chat"></i>
             <a href="#">Chat Now</a>
           </div>
@@ -102,7 +113,7 @@
           <img src="../images/doctors/5.png" alt="" />
           <h2>Maleesha Herath</h2>
           <p>PSYCHOLOGICAL COUNSELOR AND CERTIFIED PSYCHOLOGICAL THERAPIST</p>
-          <div class="button">
+          <div class="button" onclick="on()">
             <i class="bx bxs-chat"></i>
             <a href="#">Chat Now</a>
           </div>
@@ -111,7 +122,7 @@
           <img src="../images/doctors/2.png" alt="" />
           <h2>Maleesha Herath</h2>
           <p>PSYCHOLOGICAL COUNSELOR / PSYCHOTHERAPIST</p>
-          <div class="button">
+          <div class="button" onclick="on()">
             <i class="bx bxs-chat"></i>
             <a href="#">Chat Now</a>
           </div>
@@ -120,7 +131,7 @@
           <img src="../images/doctors/3.png" alt="" />
           <h2>Maleesha Herath</h2>
           <p>PSYCHOLOGICAL COUNSELOR/ PSYCHOTHERAPIST</p>
-          <div class="button">
+          <div class="button" onclick="on()">
             <i class="bx bxs-chat"></i>
             <a href="#">Chat Now</a>
           </div>
@@ -129,7 +140,7 @@
           <img src="../images/doctors/6.png" alt="" />
           <h2>Maleesha Herath</h2>
           <p>PSYCHOLOGICAL COUNSELOR / PSYCHOTHERAPIST</p>
-          <div class="button">
+          <div class="button" onclick="on()">
             <i class="bx bxs-chat"></i>
             <a href="#">Chat Now</a>
           </div>
@@ -137,6 +148,22 @@
       </div>
     </section>
 
+    <!--Chat Box -->
+    <div id="overlay">
+      <i class="bx bx-x-circle"></i>
+      <div id="blur"></div>
+      <div class="chatbox">
+        <h5>Les's Chat? - Online with your docoter</h5>
+        <p>Please fill form below to start chatting with your doctor</p>
+        <form action="">
+          <input type="text" placeholder="Your Name" />
+          <input type="email" placeholder="Your Email" />
+          <input type="text" placeholder="Enter you message" />
+          <button>Start Chat</button>
+          <i class="bx bx-x-circle" onclick="off()"></i>
+        </form>
+      </div>
+    </div>
     <!-- Footer-->
     <footer>
       <div class="container">
