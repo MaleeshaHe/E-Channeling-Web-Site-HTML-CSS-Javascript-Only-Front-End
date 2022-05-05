@@ -30,7 +30,7 @@
 
     <style>
       .medicineForm form {
-        background: #ff725e;
+        background: #212f3d;
         text-align: center;
         margin: 20px;
         padding: 20px;
@@ -58,9 +58,16 @@
         padding: 10px 18px;
         background: #212f3d;
         color: #fff;
+        border-color: #fff;
         border-radius: 25px;
         font-weight: 500;
         letter-spacing: 1px;
+      }
+
+      @media (max-width: 450px) {
+        .medicineForm form {
+          margin: 20px -45px 20px -45px;
+        }
       }
     </style>
   </head>
@@ -93,43 +100,24 @@
     <section id="about">
       <!-- Heading -->
       <div class="heading" style="padding-top: 100px">
-        <h2>Order Medicine</h2>
+        <h2>24/7 Ambulance</h2>
       </div>
 
       <!-- About Content-->
       <div class="about-content">
         <div class="about-text">
-          <div class="medicineForm">
-            <form action="">
-              <h3>Upload your Prescription</h3>
-              <input type="text" placeholder="Patient Name" class="box" />
-              <input type="text" placeholder="Phone Number" class="box" />
-              <input type="email" placeholder="your email" class="box" />
-              <input type="text" placeholder="Area" class="box" />
-              <input
-                type="text"
-                placeholder="Upload Prescription (Image only)"
-                class="box"
-              />
-              <input type="submit" value="Upload" class="btn" />
-            </form>
-          </div>
+          <img src="../images/Ambulance-amico.svg" alt="" />
         </div>
 
         <div class="about-text">
           <div class="medicineForm">
             <form action="">
-              <h3>Upload your Prescription</h3>
-              <input type="text" placeholder="Patient Name" class="box" />
+              <h3>Request for Ambulance</h3>
+              <input type="text" placeholder="Enter your Name" class="box" />
               <input type="text" placeholder="Phone Number" class="box" />
               <input type="email" placeholder="your email" class="box" />
-              <input type="text" placeholder="Area" class="box" />
-              <input
-                type="text"
-                placeholder="Upload Prescription (Image only)"
-                class="box"
-              />
-              <input type="submit" value="Upload" class="btn" />
+              <input type="text" placeholder="Address" class="box" />
+              <input type="submit" value="Send Request" class="btn" />
             </form>
           </div>
         </div>
