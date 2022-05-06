@@ -30,7 +30,7 @@ section{
 }
 
 .services{
-    background-image: url("./Sprinkle.svg");
+    background-image: url("../images/Sprinkle.svg");
     flex: 1 1 250px;
     border: 1px solid #212f3d;
     border-radius: 20px;
