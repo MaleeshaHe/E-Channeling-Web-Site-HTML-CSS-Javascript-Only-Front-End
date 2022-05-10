@@ -1,6 +1,6 @@
 # e-channeling
 
-Mini Project Instructions – ICT1153
+# Mini Project Instructions – ICT1153
 
 In this project you will build a moderate-size Web site. Each group will have 6-7 members, and
 each member should contribute equally to the project
