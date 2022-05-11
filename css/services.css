@@ -2,25 +2,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 /* Colors */
-:root{
-    --main-color:#FF725E;
-    --secind-color:#212f3d;
+:root {
+    --main-color: #FF725E;
+    --secind-color: #212f3d;
 }
 
-body{
-    
-}
+body {}
 
-section{
+section {
     min-height: 100vh;
     justify-content: center;
     align-items: center;
     text-align: center;
-    
+
 }
 
-.team-row{
-    
+.team-row {
+
     display: flex;
     text-align: center;
     justify-content: center;
@@ -29,7 +27,7 @@ section{
     padding-right: 150px;
 }
 
-.services{
+.services {
     background-image: url("../images/Sprinkle.svg");
     flex: 1 1 250px;
     border: 1px solid #212f3d;
@@ -43,34 +41,34 @@ section{
     transition: all 0.3s;
 }
 
-.services:hover{
+.services:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     transform: translateY(-20px);
 }
 
-.sicon i{
+.sicon i {
     font-size: 50px;
-    color:#212f3d;
+    color: #212f3d;
     border: 3px solid #FF725E;
     border-radius: 50%;
     padding: 10px;
 }
 
-.services h2{
-    text-transform:capitalize;
+.services h2 {
+    text-transform: capitalize;
     font-size: 24px;
     color: #212f3d;
     margin: 15px 0;
 }
 
-.services p{
-    text-transform:lowercase;
+.services p {
+    text-transform: lowercase;
     font-size: 15px;
     color: #212f3d;
     line-height: 1.6;
 }
 
-.services .button{
+.services .button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,11 +83,12 @@ section{
     cursor: pointer;
 }
 
-.services .button:hover{
+.services .button:hover {
+    box-shadow: 0 10px 34px rgba(0, 0, 10, 0.14);
     background-color: #212f3d;
 }
 
-.services .button a{
+.services .button a {
     margin-left: 10px;
     color: #fff;
     border-radius: 25px;
@@ -99,18 +98,18 @@ section{
 
 /* Ambulance CSS*/
 
-.ambulancex img{
+.ambulancex img {
     width: 500px;
     height: 500px;
     padding-bottom: 80px;
 }
 
-.ambulancex-text{
+.ambulancex-text {
     width: 500px;
     justify-content: center;
 }
 
-.ambulancex-text p{
+.ambulancex-text p {
     color: var(--secind-color);
     margin: -150px 0 24px 0;
     text-align: justify;
@@ -118,8 +117,8 @@ section{
     font-size: 16px;
 }
 
-.apButton a{
-    padding: 14px 18px;
+.apButton a {
+    padding: 10px 18px;
     background: var(--main-color);
     color: #fff;
     border-radius: 25px;
@@ -127,29 +126,37 @@ section{
     letter-spacing: 1px;
 }
 
+.apButton a:hover {
+    background-color: #212f3d;
+    box-shadow: 0 10px 34px rgba(0, 0, 10, 0.14);
+}
+
 
 
 @media (max-width:991px) {
-    .team-row{
+    .team-row {
         padding-left: 20px;
         padding-right: 20px;
     }
 }
 
 @media (max-width: 450px) {
-    .team-row{
+    .team-row {
         padding-left: 15px;
         padding-right: 15px;
     }
-    .services{
-        margin:20px;
+
+    .services {
+        margin: 20px;
     }
-    .ambulancex img{
+
+    .ambulancex img {
         width: 350px;
         height: 350px;
         padding-bottom: 80px;
     }
-    .ambulancex-text{
+
+    .ambulancex-text {
         margin: 80px 0 24px 0;
         width: 340px;
         justify-content: center;
