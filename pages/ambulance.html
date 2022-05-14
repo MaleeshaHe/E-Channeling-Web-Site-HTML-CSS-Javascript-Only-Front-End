@@ -1,33 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
+    <!-- Site meta data -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="eChannelling is the largest Doctor Channeling Network in Sri Lanka"
-    />
-    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+    <meta name="description" content="eChannelling is the largest Doctor Channeling Network in Sri Lanka"/>
+   
+    <link rel="icon" type="image/x-icon" href="../images/icon.ico" />
+   
     <title>
-      Ambulance - eChannelling | largest Doctor Channeling Network in Sri Lanka
+        Ambulance - eChannelling | largest Doctor Channeling Network in Sri Lanka
     </title>
-    <!--Link to css-->
+    
+    <!-- CSS files link -->
     <link rel="stylesheet" href="../css/style.css" />
+    
     <!--Box icon-->
-    <link
-      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet"/>
+    
     <!-- Font Awesome CDN Link -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
+
+    <!-- CSS Internal -->
     <style>
       .medicineForm form {
         background: #212f3d;
@@ -129,16 +126,22 @@
     <!-- Custom Alert box -->
     <link rel="stylesheet" href="../js/cute-alert-master/style.css" />
     <script src="../js/cute-alert-master/cute-alert.js"></script>
-  </head>
-  <body>
-    <!-- header section -->
 
+  </head>
+
+
+  <body>
+
+    <!-- Start header section -->
     <header id="header">
+
+      <!-- Main Logo and Name -->
       <a href="../index.html" class="logo">
         <img src="../images/xlogo.png" alt="" />
         <span style="color: #212f3d"></span> eChannelling.
       </a>
 
+      <!-- Main Menu -->
       <nav class="navbar">
         <a href="../index.html">Home</a>
         <a href="../pages/doctors.html">Doctors</a>
@@ -152,11 +155,16 @@
         <a href="./logging.html">Sign in</a>
       </div>
 
+      <!-- Mobile menu toggle icon -->
       <div id="menu-btn" class="fas fa-bars"></div>
-    </header>
 
-    <!-- Ambulance Form Section -->
+    </header>
+    <!-- End header section -->
+
+
+    <!-- Start Ambulance Form Section -->
     <section id="about">
+
       <!-- Heading -->
       <div class="heading" style="padding-top: 100px">
         <h2>24/7 Ambulance Service</h2>
@@ -169,51 +177,30 @@
         </div>
 
         <div class="about-text">
+
           <div class="medicineForm">
+
             <form action="" method="post">
+
               <h3>Request for Ambulance</h3>
-              <input
-                type="text"
-                placeholder="Enter your Name"
-                class="box"
-                id="name"
-                required
-              />
-              <small class="er">Error message</small>
-              <input
-                type="text"
-                placeholder="Phone Number"
-                class="box"
-                id="mobileNum"
-                required
-              />
-              <small class="er">Error message</small>
-              <input
-                type="email"
-                placeholder="your email"
-                class="box"
-                id="email"
-                required
-              />
-              <input
-                type="text"
-                placeholder="Address"
-                class="box"
-                id="address"
-                required
-              />
-              <input
-                type="button"
-                value="Send Request"
-                class="btn"
-                onclick="formValid()"
-                required
-              />
+
+              <input type="text" placeholder="Enter your Name" class="box" id="name" required/>
+              
+              <input type="text" placeholder="Phone Number" class="box" id="mobileNum" required />
+          
+              <input type="email" placeholder="your email" class="box" id="email" required />
+
+              <input type="text" placeholder="Address" class="box" id="address" required />
+
+              <input type="button" value="Send Request" class="btn" onclick="formValid()" required />
+
             </form>
+
           </div>
         </div>
       </div>
     </section>
+    <!-- End Ambulance Form Section -->
     
 
     <!-- Ambulance Gallary Section -->
@@ -262,25 +249,37 @@
       </div>
     </section>
 
-    <!-- Footer-->
+
+    <!-- Start Footer -->
     <footer>
+
       <div class="container">
         <div class="wrapper">
+
+          <!-- Footer widget 1 -->
           <div class="footer-widget">
+
+            <!-- Footer Logo and name -->
             <a href="#" class="logo">
               <img src="../images/xlogo.png" alt="" />
               eChannelling.
             </a>
+
             <p class="desc">
               eChannelling is the largest Doctor Channeling Network in Sri Lanka
             </p>
+
+            <!-- Footer Ambulance call button -->
             <a href="tel:1990">
               <button class="callButn">
                 <i class="fa fa-ambulance" aria-hidden="true"></i>
                 <span class="callButn">Call ambulance<br />1990</span>
               </button>
             </a>
+
           </div>
+
+          <!-- Footer widget 2 -->
           <div class="footer-widget">
             <h6>Quick Link</h6>
             <ol class="links">
@@ -291,6 +290,8 @@
               <li><a href="#">contact</a></li>
             </ol>
           </div>
+
+          <!-- Footer widget 3 -->
           <div class="footer-widget">
             <h6>Services</h6>
             <ol class="links">
@@ -300,24 +301,32 @@
               <li><a href="#">blog writing</a></li>
             </ol>
           </div>
+
+          <!-- Footer widget 4 -->
           <div class="footer-widget">
             <h6>Help &amp; Support</h6>
             <ol class="links">
               <li><a href="#">support center</a></li>
               <li><a href="#">live chat</a></li>
               <li><a href="#">FAQ</a></li>
-              <li><a href="#">terms &amp; conditions</a></li>
+              <li><a href="./terms&conditions.html">terms &amp; conditions</a></li>
             </ol>
           </div>
+
         </div>
+
+        <!-- Footer copyright area -->
         <div class="copyright-wrapper">
           <p>
             Design and Developed by
             <a href="#" target="blank">UOR FOT ICT Group 06</a>
           </p>
         </div>
+
       </div>
+
     </footer>
+    <!-- End Footer -->
 
     <!-- Scroll Reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -325,7 +334,9 @@
     <!-- Link to JS-->
     <script src="../js/main.js"></script>
 
-    <!-- Form validation JS-->
+    <!-- Link to form JS-->
     <script src="../js/ambulance.js"></script>
+
   </body>
+  
 </html>

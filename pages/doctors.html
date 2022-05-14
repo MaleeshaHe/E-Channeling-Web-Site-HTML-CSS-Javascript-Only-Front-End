@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="eChannelling is the largest Doctor Channeling Network in Sri Lanka"/>
    
-    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="../images/icon.ico" />
    
     <title>
       Doctors - eChannelling | largest Doctor Channeling Network in Sri Lanka
@@ -174,16 +174,36 @@
         <h5>Les's Chat? - chat with your Doctor</h5>
         <p>Please fill form below to start chatting with your doctor</p>
 
-        <form action="">
+        <form onsubmit="sendEmail(); reset(); return false;" method="post">
           <input type="text" placeholder="Your Name" />
-          <input type="email" placeholder="Your Email" />
-          <input type="text" placeholder="Enter you message" />
-          <button>Start Chat</button>
+          <input type="email" placeholder="Your Email" id="email"/>
+          <input type="text" placeholder="Enter you message" id="massage"/>
+          <button type="submit">Start Chat</button>
           <i class="bx bx-x-circle" onclick="off()"></i>
         </form>
 
       </div>
     </div>
+
+
+    <!-- SMTP mail sent js -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    
+    <script>
+      function sendEmail(){
+        Email.send({
+            Host : "smtp.gmail.com",
+            Username : "emedig06@gmail.com",
+            Password : "medi12345@",
+            To : 'emedig06@gmail.com',
+            From : 'emedig06@gmail.com',
+            Subject : "Chat with Doctor",
+            Body : "And this is the body"
+        }).then(
+          message => alert(message)
+        );
+      }
+    </script>
 
     <!-- Chat Box Java script -->
     <script>
