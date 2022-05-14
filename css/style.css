@@ -228,6 +228,73 @@
     box-shadow: 0 10px 34px rgba(0, 0, 10, 0.14);
 }
 
+#home2 {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    justify-content: space-around;
+    align-items: center;
+    background: #6988E7;
+}
+
+.homeHeading {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.team-row {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.services {
+    background-image: url("../images/Sprinkle.svg");
+    flex: 1 1 250px;
+    border: 1px solid #212f3d;
+    border-radius: 20px;
+    margin: 20px;
+    text-align: center;
+    padding: 20px 10px;
+    background-color: white;
+    cursor: pointer;
+    max-width: 250px;
+    transition: all 0.3s;
+}
+
+.services:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+.sicon i {
+    font-size: 50px;
+    color: #212f3d;
+    border: 3px solid var(--main-color);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.services h2 {
+    text-transform: capitalize;
+    font-size: 24px;
+    color: #212f3d;
+    margin: 15px 0;
+}
+
+.services p {
+    font-size: 15px;
+    color: #212f3d;
+    line-height: 1.6;
+}
+
+.services img {
+    width: 200px;
+}
+
 /* Footer */
 
 footer {
@@ -480,6 +547,10 @@ footer {
 
     #home {
         flex-direction: column;
+    }
+
+    #home2 {
+        height: auto;
     }
 
     .home-text {
