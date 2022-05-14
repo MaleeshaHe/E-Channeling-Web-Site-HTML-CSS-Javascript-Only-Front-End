@@ -131,6 +131,19 @@
     height: 100%;
     object-fit: contain;
     object-position: center;
+    animation: float 3s linear infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0rem);
+    }
+
+    50% {
+        transform: translateY(-1rem);
+    }
 }
 
 /* Appointment button*/
