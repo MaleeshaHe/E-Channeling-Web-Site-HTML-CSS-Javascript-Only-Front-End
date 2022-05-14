@@ -3,7 +3,7 @@
 
 /* Colors */
 :root {
-    --main-color: #FF725E;
+    --main-color: #6988E7;
     --secind-color: #212f3d;
 }
 
@@ -49,7 +49,7 @@ section {
 .sicon i {
     font-size: 50px;
     color: #212f3d;
-    border: 3px solid #FF725E;
+    border: 3px solid var(--main-color);
     border-radius: 50%;
     padding: 10px;
 }

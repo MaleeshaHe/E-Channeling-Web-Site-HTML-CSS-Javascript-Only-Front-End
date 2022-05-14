@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-body{
+body {
     background: #f5f5f5;
     background-image: url("../images/Sprinkle.svg");
 }
 
 /* Colors */
-:root{
-    --main-color:#FF725E;
-    --secind-color:#212f3d;
+:root {
+    --main-color: #6988E7;
+    --secind-color: #212f3d;
 }
 
-.Fcontainer{
+.Fcontainer {
     position: relative;
     max-width: 900px;
     width: 100%;
@@ -20,10 +20,10 @@ body{
     margin: 0 auto;
     background-color: #fff;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    
+
 }
 
-.loader{
+.loader {
     position: fixed;
     top: 0;
     left: 0;
@@ -34,21 +34,21 @@ body{
     text-align: center;
 }
 
-.loader img{
+.loader img {
     margin-top: 300px;
     width: 100px;
 }
 
 
 
-.Fcontainer header{
+.Fcontainer header {
     position: relative;
     font-size: 20px;
     font-weight: 600;
     color: #333;
 }
 
-.Fcontainer header::before{
+.Fcontainer header::before {
     content: "";
     position: absolute;
     left: 0;
@@ -59,7 +59,7 @@ body{
     background-color: var(--main-color);
 }
 
-.Fcontainer form{
+.Fcontainer form {
     position: relative;
     margin-top: 16px;
     min-height: 490px;
@@ -67,46 +67,46 @@ body{
     overflow: hidden;
 }
 
-.Fcontainer form .form{
+.Fcontainer form .form {
     position: absolute;
     background-color: #fff;
     transition: 0.3s ease;
 }
 
-.Fcontainer form .form.second{
+.Fcontainer form .form.second {
     opacity: 0;
     pointer-events: none;
     transform: translateX(100%);
 }
 
-.Fcontainer form .form.third{
+.Fcontainer form .form.third {
     opacity: 0;
     pointer-events: none;
     transform: translateX(100%);
 }
 
-form.secActive .form.second{
+form.secActive .form.second {
     opacity: 1;
     pointer-events: auto;
     transform: translateX(0);
 }
 
 
-form.thirdActive .form.third{
+form.thirdActive .form.third {
     opacity: 1;
     pointer-events: auto;
     transform: translateX(0);
 }
 
 
-form.secActive .form.first{
+form.secActive .form.first {
     opacity: 0;
     pointer-events: none;
     transform: translateX(-100%);
 }
 
 
-form.thirdActive .form.second{
+form.thirdActive .form.second {
     opacity: 0;
     pointer-events: none;
     transform: translateX(-100%);
@@ -114,7 +114,7 @@ form.thirdActive .form.second{
 
 
 
-.Fcontainer form .title{
+.Fcontainer form .title {
     display: block;
     margin-bottom: 8px;
     font-size: 16px;
@@ -123,7 +123,7 @@ form.thirdActive .form.second{
     color: #333;
 }
 
-.Fcontainer form .successful{
+.Fcontainer form .successful {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.20);
     background: rgb(226, 226, 226);
     border-radius: 10px;
@@ -136,27 +136,27 @@ form.thirdActive .form.second{
     top: 120px;
 }
 
-.Fcontainer form .fields{
+.Fcontainer form .fields {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-form .fields .input-field{
+form .fields .input-field {
     display: flex;
     width: calc(100% / 3 - 15px);
     flex-direction: column;
     margin: 1px 0;
 }
 
-.input-field label{
+.input-field label {
     font-size: 12px;
     font-weight: 500;
     color: #2e2e2e;
 }
 
-.input-field textarea{
+.input-field textarea {
     outline: none;
     font-size: 14px;
     font-weight: 400;
@@ -170,7 +170,7 @@ form .fields .input-field{
 }
 
 .input-field select,
-.input-field input{
+.input-field input {
     outline: none;
     font-size: 14px;
     font-weight: 400;
@@ -182,19 +182,21 @@ form .fields .input-field{
     margin: 8px 0;
 }
 
-.input-field input:is(:focus, :valid){
+.input-field input:is(:focus, :valid) {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
 }
 
-.input-field input[type="date"]{
+.input-field input[type="date"] {
     color: #707070;
 }
 
-.input-field input[type="date"]:valid{
+.input-field input[type="date"]:valid {
     color: #333;
 }
 
-.Fcontainer form button,.submitx, .backBtn{
+.Fcontainer form button,
+.submitx,
+.backBtn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -213,44 +215,46 @@ form .fields .input-field{
 
 .Fcontainer form .submitx,
 .Fcontainer form button,
-.Fcontainer form .backBtn{
+.Fcontainer form .backBtn {
     font-size: 14px;
     font-weight: 400;
 }
 
-form button:hover{
+form button:hover {
     background-color: var(--main-color);
 }
 
 form button i,
-form .backBtn i{
+form .backBtn i {
     margin: 0 6px;
 }
 
-form .backBtn i{
+form .backBtn i {
     transform: rotate(180deg);
 }
 
-form .buttons{
+form .buttons {
     display: flex;
     align-items: center;
 }
 
-form .buttons button , .backBtn{
+form .buttons button,
+.backBtn {
     margin-right: 14px;
 }
 
 
 
 @media (max-width: 750px) {
-    .Fcontainer form{
+    .Fcontainer form {
         overflow-y: scroll;
     }
-    .Fcontainer form::-webkit-scrollbar{
-       display: none;
+
+    .Fcontainer form::-webkit-scrollbar {
+        display: none;
     }
 
-    .Fcontainer form .successful{
+    .Fcontainer form .successful {
         background: rgb(226, 226, 226);
         border-radius: 10px;
         padding-top: 40px;
@@ -262,19 +266,19 @@ form .buttons button , .backBtn{
         top: 120px;
         font-size: smaller;
     }
-    
+
     form .fields.input-field textarea,
     form .fields.input-field select,
-    form .fields .input-field{
+    form .fields .input-field {
         width: calc(100% / 2 - 15px);
     }
 }
 
 @media (max-width: 550px) {
+
     form .fields.input-field textarea,
     form .fields.input-field select,
-    form .fields .input-field{
+    form .fields .input-field {
         width: 100%;
     }
 }
-
