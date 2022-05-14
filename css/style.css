@@ -254,8 +254,8 @@
 .services {
     background-image: url("../images/Sprinkle.svg");
     flex: 1 1 250px;
-    border: 1px solid #212f3d;
-    border-radius: 20px;
+
+    border-radius: 25px;
     margin: 20px;
     text-align: center;
     padding: 20px 10px;
@@ -266,7 +266,7 @@
 }
 
 .services:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
     transform: translateY(-5px);
 }
 
