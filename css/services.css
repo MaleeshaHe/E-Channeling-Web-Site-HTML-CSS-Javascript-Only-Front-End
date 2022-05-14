@@ -62,10 +62,13 @@ section {
 }
 
 .services p {
-    text-transform: lowercase;
     font-size: 15px;
     color: #212f3d;
     line-height: 1.6;
+}
+
+.services img {
+    width: 200px;
 }
 
 .services .button {
