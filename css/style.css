@@ -260,7 +260,7 @@
     padding: 20px 10px;
     background-color: white;
     cursor: pointer;
-    max-width: 250px;
+    max-width: 270px;
     transition: all 0.3s;
 }
 
@@ -533,7 +533,7 @@ footer {
     }
 
     .home-text h1 {
-        font-size: 2.5rem;
+        font-size: 80px;
         margin-bottom: 1.8rem;
         line-height: 4rem;
     }
@@ -702,6 +702,12 @@ footer {
         object-fit: contain;
         object-position: center;
         animation: float 3s linear infinite;
+    }
+
+    .services {
+        text-align: center;
+        padding: 20px 10px;
+        max-width: 350px;
     }
 
 
