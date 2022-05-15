@@ -7,9 +7,7 @@
     --secind-color: #212f3d;
 }
 
-body {
-    background-image: url('../images/Sprinkle.svg');
-}
+body {}
 
 section {
     min-height: 100vh;
@@ -38,6 +36,7 @@ section {
     cursor: pointer;
     max-width: 300px;
     transition: all 0.3s;
+    background-image: url('../images/Sprinkle.svg');
 }
 
 .member:hover {
