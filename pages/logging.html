@@ -66,7 +66,7 @@
               margin: 15px 0;
           }
 
-          button {
+          .button {
               border-radius: 20px;
               border: 1px solid #3098F3;
               background-color: #3098F3;
@@ -78,7 +78,7 @@
               text-transform: uppercase;
           }
 
-          button:hover {
+          .button:hover {
               background: #212f3d;
               box-shadow: 0 10px 34px rgba(0, 0, 10, 0.14);
           }
@@ -147,6 +147,11 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 
+        <!-- Custom Alert box -->
+    <link rel="stylesheet" href="../js/cute-alert-master/style.css" />
+    <script src="../js/cute-alert-master/cute-alert.js"></script>
+
+
   </head>
 
 
@@ -174,8 +179,9 @@
                 <input type="password" name="password" placeholder="Password" id="pass">
 
                 <a href="#">Forgot Your Password</a>
+
+                <input type="button" value="Sign in" class="button" onclick="checkEmpty()"/>
         
-                <button onclick="checkEmpty()">Sign In</button>
                 
             </form>
         </div>

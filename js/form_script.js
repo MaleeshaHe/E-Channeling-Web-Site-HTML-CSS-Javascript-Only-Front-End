@@ -96,7 +96,7 @@ function checkEmpty(){
 			text: "Thank you!",
 			showConfirmButton: false,
 			footer:
-			  '<button type="button"><a href="./index.html">Home</a></button>',
+			  '<button type="button"><a href="../index.html">Home</a></button>',
 		  });
 	}
 
