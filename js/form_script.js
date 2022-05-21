@@ -3,31 +3,73 @@ $(window).on("load", function () {
   $(".loader").hide();
 });
 
-// Appointment form page slide javascript
-const form = document.querySelector("form"),
-  nextBtn = form.querySelector(".nextBtn"),
-  backBtn = form.querySelector(".backBtn"),
-  submitx = form.querySelector(".submitx"),
-  allInput = form.querySelectorAll(".first input");
+function checkEmpty(){
 
-nextBtn.addEventListener("click", () => {
-  allInput.forEach((input) => {
-    if (input.value != "") {
-      form.classList.add("secActive");
-    } else {
-      form.classList.remove("secActive");
-    }
-  });
-});
+	var fname = document.getElementById("fname").value;
+  var lname = document.getElementById("lname").value;
+  var fnum = document.getElementById("fnum").value;
+  var femail = document.getElementById("femail").value;
+  var address = document.getElementById("address").value;
+  var doctor = document.getElementById("doctor").value;
+  var hospital = document.getElementById("hospital").value;
 
-backBtn.addEventListener("click", () => form.classList.remove("secActive"));
 
-submitx.addEventListener("click", () => {
-  allInput.forEach((input) => {
-    if (input.value != "") {
-      form.classList.add("thirdActive");
-    } else {
-      form.classList.remove("thirdActive");
-    }
-  });
-});
+	if(fname == null || fname == ""){
+		alert("Fill the First Name Field!");
+	}
+  else if(lname == null || lname == ""){
+		alert("Fill the Last Name Field!");
+	}
+  else if(fnum == null || fnum == ""){
+		alert("Fill the Mobile Number Field!");
+	}
+  else if(femail == null || femail == ""){
+		alert("Fill the Email Field!");
+	}
+  else if(address == null || address == ""){
+		alert("Fill the Address Field!");
+	}
+  else if(doctor == null || doctor == ""){
+		alert("Fill the preferred doctor Field!");
+	}
+  else if(hospital == null || hospital == ""){
+		alert("Fill the preferred hospital Field!");
+	}
+
+	else{
+    cuteAlert({
+      type: "success",
+      title: "Your Request has been sent",
+      message: "Thank You !!",
+      buttonText: "Okay",
+    });
+	}
+
+}
+
+
+function checkLetterf(){
+  var fname = document.getElementById("fname").value;
+  var letters = /^[A-Za-z]+$/;
+  
+  if(fname.match(letters)){
+    return true;
+  }
+  else{
+    confirm("Please Enter Letters only!");
+    return false;
+  }
+}
+
+function checkLetterl(){
+  var lname = document.getElementById("lname").value;
+  var letters = /^[A-Za-z]+$/;
+  
+  if(lname.match(letters)){
+    return true;
+  }
+  else{
+    confirm("Please Enter Letters only!");
+    return false;
+  }
+}

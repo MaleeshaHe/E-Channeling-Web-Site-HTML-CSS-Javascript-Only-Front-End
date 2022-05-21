@@ -233,7 +233,7 @@
     height: 60vh;
     justify-content: space-around;
     align-items: center;
-    background: var(--main-color);
+    background: var(--secind-color);
 }
 
 .homeHeading {
