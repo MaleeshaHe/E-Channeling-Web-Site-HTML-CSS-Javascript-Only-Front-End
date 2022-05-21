@@ -24,7 +24,8 @@
           }
 
           body {
-              background: #f6f5f7;
+              background-image: url(../images/back.jpg);
+              background-repeat: no-repeat;
               display: flex;
               justify-content: center;
               align-items: center;
@@ -83,7 +84,7 @@
           }
 
           form {
-              background-color: #FFFFFF;
+              background-color: rgba(256, 256, 256, 0.2);
               display: flex;
               align-items: center;
               justify-content: center;
@@ -142,6 +143,8 @@
 
     <!-- icon-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 
   </head>
@@ -166,19 +169,23 @@
 
                 <span>or use your account</span>
 
-                <input type="text" name="username" placeholder="User Name">
+                <input type="text" name="username" placeholder="User Name" id="fname" onclick="checkLetterf()">
                 
-                <input type="password" name="password" placeholder="Password">
+                <input type="password" name="password" placeholder="Password" id="pass">
 
                 <a href="#">Forgot Your Password</a>
         
-                <button>Sign In</button>
+                <button onclick="checkEmpty()">Sign In</button>
                 
             </form>
         </div>
    
     </div>
     <!-- Sign in section -->
+
+
+    <!-- Link to form JS-->
+    <script src="../js/form_script.js"></script>
 
   </body>
 
