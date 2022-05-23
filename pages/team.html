@@ -25,87 +25,95 @@
 
     <!-- CSS -->
     <style>
-        .team-row {
-            display: flex;
-            text-align: center;
-            justify-content: center;
-            flex-wrap: wrap;
-            padding-left: 150px;
-            padding-right: 150px;
+
+      /* Colors */
+      :root {
+          --main-color: #3098F3;
+          --secind-color: #212f3d;
+      }
+
+       .team-row {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding-top: 50px;
+      padding-left: 120px;
+      padding-right: 120px;
         }
 
-        .member {
-            flex: 1 1 250px;
-            border: 1px solid #212f3d;
-            border-radius: 20px;
-            margin: 40px;
-            text-align: center;
-            padding: 20px 10px;
-            background-color: white;
-            cursor: pointer;
-            max-width: 300px;
-            transition: all 0.3s;
-            background-image: url('../images/Sprinkle.svg');
+      .member {
+          flex: 1 1 250px;
+          border: 1px solid var(--secind-color);
+          border-radius: 20px;
+          margin: 35px;
+          text-align: center;
+          padding: 20px 10px;
+          cursor: pointer;
+          max-width: 300px;
+          transition: all 0.3s;
+          background-image: url('../images/Sprinkle.svg');
+      }
+
+      .member:hover {
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      } 
+
+      .icons2 a{
+          height:5.0rem;
+          width:5.0rem;
+          line-height: 4.7rem;
+          font-size: 2.7rem;
+          color:#fff;
+          background:var(--green);
+          border-radius: 40%;
+          margin-top: 1rem;
+          margin-left: 0.3rem;
+          margin-right: 0.3rem;
+          box-shadow: 0 10px 20px rgba(0, 0, 1, 0.3);
+        }
+        
+
+      .icons2 a:hover{
+          background:var(--black);
+          color:#fff;
         }
 
-        .member:hover {
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-            transform: translateY(-20px);
+        .icons2 a:hover {
+          transform:scale(1.2) rotate(0deg);
+          border-radius: 100%;
         }
+        
+      .member img {
+          display: block;
+          width: 120px;
+          height: 120px;
+          object-fit: cover;
+          border: 3px solid var(--main-color);
+          border-radius: 50%;
+          margin: 0 auto;
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
 
-        .member img {
-            display: block;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border: 4px solid var(--main-color);
-            border-radius: 50%;
-            margin: 0 auto;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-        }
+      .member img:hover {
+          transform:scale(1.2) rotate(0deg);
+      
+      }
 
-        .member h2 {
-            text-transform: capitalize;
-            font-size: 24px;
-            color: #212f3d;
-            margin: 15px 0;
-        }
+      .member h2 {
+          text-transform: capitalize;
+          font-size: 24px;
+          color: #212f3d;
+          margin: 15px 0;
+      }
 
-        .member p {
-            text-transform: lowercase;
-            font-size: 15px;
-            color: #212f3d;
-            line-height: 1.6;
-        }
+      .member p {
+          text-transform:none;
+          font-size: 15px;
+          color: #8a8a8a;
+          line-height: 1.6;
+      }
 
-        .member .button {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 20px 40px 10px 40px;
-            height: 45px;
-            border: none;
-            outline: none;
-            color: #fff;
-            border-radius: 25px;
-            background-color: var(--main-color);
-            transition: all 0.3s linear;
-            cursor: pointer;
-        }
-
-        .member .button:hover {
-            background-color: #212f3d;
-        }
-
-        .member .button a {
-            margin-left: 10px;
-            color: #fff;
-            border-radius: 10px;
-            font-weight: 500;
-            letter-spacing: 1px;
-        }
-
-       
 
         @media (max-width:991px) {
             .team-row {
@@ -165,7 +173,7 @@
     <section id="about">
       <!-- Heading -->
       <div class="heading" style="padding-top: 100px">
-        <h2>Our Team</h2>
+        <h2>Our Team Members</h2>
       </div>
 
       <!-- Content-->
@@ -178,49 +186,49 @@
         <div class="member">
           <img src="../images/doctors/7.png" alt="" />
           <h2>Maleesha</h2>
-          <p>About page</p>
+          <p><b>WEB DEVELOPER</b><br>University Of Ruhuna <br> Faculty Of Technology <br><b>BICT</b></p>
         </div>
 
         <!-- Card 2 -->
         <div class="member">
           <img src="../images/doctors/1.png" alt="" />
           <h2>Malshi</h2>
-          <p>About page</p>
+          <p><b>WEB DEVELOPER</b><br>University Of Ruhuna <br> Faculty Of Technology <br><b>BICT</b></p>
         </div>
 
         <!-- Card 3 -->
         <div class="member">
           <img src="../images/doctors/6.png" alt="" />
           <h2>Akathar</h2>
-          <p>About page</p>
+          <p><b>WEB DEVELOPER</b><br>University Of Ruhuna <br> Faculty Of Technology <br><b>BICT</b></p>
         </div>
 
         <!-- Card 4 -->
         <div class="member">
           <img src="../images/doctors/2.png" alt="" />
           <h2>Ganidu</h2>
-          <p>About page</p>
+          <p><b>WEB DEVELOPER</b><br>University Of Ruhuna <br> Faculty Of Technology <br><b>BICT</b></p>
         </div>
 
         <!-- Card 5 -->
         <div class="member">
           <img src="../images/doctors/5.png" alt="" />
           <h2>Vinod</h2>
-          <p>About page</p>
+          <p><b>WEB DEVELOPER</b><br>University Of Ruhuna <br> Faculty Of Technology <br><b>BICT</b></p>
         </div>
 
         <!-- Card 6 -->
         <div class="member">
           <img src="../images/doctors/4.png" alt="" />
           <h2>Winuri</h2>
-          <p>About page</p>
+          <p><b>WEB DEVELOPER</b><br>University Of Ruhuna <br> Faculty Of Technology <br><b>BICT</b></p>
         </div>
 
         <!-- Card 7 -->
         <div class="member">
           <img src="../images/doctors/3.png" alt="" />
           <h2>Maduwantha</h2>
-          <p>About page</p>
+          <p><b>WEB DEVELOPER</b><br>University Of Ruhuna <br> Faculty Of Technology <br><b>BICT</b></p>
         </div>
 
         
