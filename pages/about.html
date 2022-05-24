@@ -16,6 +16,78 @@
     
     <!-- CSS files link -->
     <link rel="stylesheet" href="../css/style.css" />
+
+    <style>
+
+    .about-content form .btn,
+    .btn a {
+        padding: 10px 18px;
+        background: var(--main-color);
+        color: #fff;
+        border-radius: 25px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        border: none;
+    }
+
+    .btn a:hover {
+        background: var(--secind-color);
+        box-shadow: 0 10px 34px rgba(0, 0, 10, 0.14);
+    }
+
+    .about-content form{
+      text-align: center;
+      margin-top: 20px;
+      padding:20px;
+      border:.1rem solid rgba(0,0,0,.3);
+      border-radius:19px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+      
+    }
+
+    .about-content form{
+      box-shadow:0 0 11px -5px var(--secind-color);
+      outline: none; 
+
+    }
+
+    .about-content form .inputBox{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+    }
+
+    .about-content form .inputBox input, .contact form textarea{
+      padding:10px;
+      font-size: 12px;
+      background:#f7f7f7;
+      text-transform: none;
+      margin:1rem 0;
+      border:.1rem solid rgba(0,0,0,.3);
+      width: 49%;
+      border-radius:10px;
+    }
+
+    .about-content form .inputBox :focus {
+      box-shadow:0 0 3px 0px var(--green);
+      outline: none; 
+    }
+
+    .about-content form textarea:focus {
+      box-shadow:0 0 3px 0px var(--green);
+      outline: none;
+    }
+
+    .about-content form textarea{
+      height: 200px;
+      resize: none;
+      width: 100%;
+      border-radius:10px;
+    }
+
+
+    </style>
     
     <!--Box icon-->
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet"/>
@@ -23,7 +95,9 @@
     <!-- Font Awesome CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
-
+    <!-- Custom Alert box -->
+    <link rel="stylesheet" href="../js/cute-alert-master/style.css" />
+    <script src="../js/cute-alert-master/cute-alert.js"></script>
 
   </head>
 
@@ -77,6 +151,11 @@
                 <p><strong>Doctor Channeling System and Service </strong></p>
                 <p>Along with the doctor channeling system and service e-Channelling PLC provides
                    following value added services to hospitals and patients.</p>
+
+                <!--Button-->
+                <div class="btn">
+                  <a href="#contact">Contact Us</a>
+                </div>
           
             </div>
         </div>
@@ -88,6 +167,120 @@
 
       </div>
     </section>
+
+
+    <!-- 2 Section -->
+    <section id="contact">
+      <!-- Heading -->
+      <div class="heading" style="padding-top: 100px">
+        <h2>Contact Us</h2>
+      </div>
+
+      <!-- Content-->
+      <div class="about-content">
+
+        <!-- Form -->
+        <form action="" name="countactUS">
+        
+          <div class="inputBox">
+              <input type="text" id="name" placeholder="First Name" id="name" onblur="checkLetterf()" required>
+              <input type="email" id="femail" placeholder="Enter your email" id="femail" required>
+
+          </div>
+  
+          <div class="inputBox" >
+              <input type="number" id="fnum" placeholder="Enter your mobile number" id="fnum" required> 
+              <input type="text" id="fsub" placeholder="Enter your subject"  required>
+          </div>
+        
+          <textarea placeholder="Enter your Message"  id="msg" cols="30" rows="10" id="fmsg"  required></textarea>
+  
+          <input type="button" value="send message" class="btn" onclick="ch();">
+          <input type="reset" value="reset value" class="btn">
+  
+      </form>
+
+
+      </div>
+    </section>
+
+    <script>
+      function ch(){       
+        
+      var name = document.getElementById("name").value;
+      var lname = document.getElementById("femail").value;
+      var fnum = document.getElementById("fnum").value;
+      var femail = document.getElementById("femail").value;
+      var msg = document.getElementById("msg").value;
+
+      if(name == null || name == ""){
+        cuteToast({
+          type: "error",
+          title: "Name",
+          message: "Fill the First Name Field!",
+          timer: 5000,
+        });
+      }
+      else if(lname == null || lname == ""){
+        cuteToast({
+          type: "error",
+          title: "Name",
+          message: "Fill the Email Field!",
+          timer: 5000,
+        });
+      }
+      else if(fnum == null || fnum == ""){
+        cuteToast({
+          type: "error",
+          title: "Name",
+          message: "Fill the Mobile Number Field!",
+          timer: 5000,
+        });
+      }
+      else if(femail == null || femail == ""){
+        cuteToast({
+          type: "error",
+          title: "Name",
+          message: "Fill the Subject Field!",
+          timer: 5000,
+        });
+      }
+      else if(msg == null || msg == ""){
+        cuteToast({
+          type: "error",
+          title: "Name",
+          message: "Fill the Messege Field!",
+          timer: 5000,
+        });
+      }
+      else{
+        cuteAlert({
+          type: "success",
+          title: "Your Appointment has been sent",
+          message: "We will contact you soon",
+          buttonText: "Okay",
+        });
+      }
+      }
+
+      function checkLetterf(){
+      var fname = document.getElementById("fname").value;
+      var letters = /^[A-Za-z]+$/;
+      
+      if(fname.match(letters)){
+        return true;
+      }
+      else{
+        cuteToast({
+          type: "error",
+          title: "Name",
+          message: "You can enter only Characters",
+          timer: 5000,
+        });
+        return false;
+      }
+    }
+    </script>
 
 
 
